@@ -1,0 +1,107 @@
+.list-group-item {
+    width: 100%;
+    margin-bottom: 3px;
+    border: 2px solid #352C2C !important;
+    border-radius: 10px !important;
+    background-color: #352C2C !important;
+    color: sandybrown !important;
+
+}
+
+.bordercls {
+    border: 2px solid #352C2C !important;
+    border-radius: 25%;
+}
+
+.header {
+    margin-top: 30px;
+    justify-content: space-between !important;
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem !important;
+}
+
+.design {
+    border: 2px solid #352C2C;
+    border-radius: 5%;
+    padding: 15px;
+    height: 100%;
+}
+
+h3 {
+    text-align: center;
+    margin: 5px !important;
+}
+
+.forplus {
+    width: 100% !important;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.forplus :hover {
+    background-color:#352C2C;
+    color: sandybrown;
+    cursor: pointer;
+}
+
+h4 {
+    text-align: center;
+    justify-content: center;
+    margin: auto !important;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+}
+
+ul {
+    height: 420px;
+}
+
+#context-menu {
+    position: fixed;
+    z-index: 10000;
+    width: 200px;
+    background: slategrey;
+    border-radius: 5px;
+    transform: scale(0);
+    transform-origin: top right;
+}
+
+#context-menu .item {
+    padding: 8px 10px;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+    border-radius: inherit;
+    background-color: slategrey;
+}
+
+#context-menu .item:hover {
+    background: #352C2C;
+    color:sandybrown;
+}
+
+#context-menu.visible {
+    transform: scale(1);
+    transition:ease-out;
+} 
+
+.resbutton {
+    width: 90px !important;
+    background-color: #352C2C !important;
+    color: sandybrown !important;
+}
+.resBut1 {
+    width: 90px !important;
+}
+.resBut2 {
+    width: 90px !important;
+}
+body {
+    text-align: center;
+    background-color: sandybrown !important;
+}
