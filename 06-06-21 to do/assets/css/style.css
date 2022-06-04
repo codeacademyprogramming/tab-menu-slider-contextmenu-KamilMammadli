@@ -1,0 +1,80 @@
+body{
+    background-color:sandybrown !important;
+}
+h1{
+    text-align: center; color:#352C2C;
+}
+.container1 {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    margin-top: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    height: 35px;
+  }
+  
+  .container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .list-group-item {
+      color: sandybrown !important;
+    width: 1261px;
+    background-color: #352C2C !important;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color:#352C2C;
+  }
+  
+  .container1:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .container1 input:checked ~ .checkmark {
+    background-color: black;
+  }
+    .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }  
+  .container1 input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container1 .checkmark:after {
+    left: 10px;
+    top: 3px;
+    width: 8px;
+    height: 20px;
+    border: solid sandybrown;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+
+  .span {
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    padding: 10px 19px 7px 20px;
+  }
+  
+  .span:hover {
+    background-color: sandybrown;
+    color: black;
+  }
+  .restorebutton {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+  }

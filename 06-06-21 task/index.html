@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>TO DO LIST</h1>
+
+    <div class="container header d-flex">
+
+        <div class="design todo row col-4">
+            <h3>To do</h3>
+            <div>
+                <input type="text" class="form-control bordercls invisible" id="myInput"
+                    placeholder="Write to do list items" />
+            </div>
+            <div class="container mt-3 forcheckbox">
+                <div class="place"></div>
+                <ul class="list-group todo-list drop-zone">
+                </ul>
+            </div>
+
+            <div class="forplus">
+                <h4 class="first">+</h4>
+            </div>
+        </div>
+
+        <div class="design in-progress row col-4">
+            <h3>In progress</h3>
+            <div>
+                <input type="text" class="form-control bordercls invisible" id="myInput1"
+                    placeholder="Write progress list items" />
+            </div>
+            <div class="container mt-3 forcheckbox">
+                <div class="place"></div>
+                <ul class="list-group todo-list1 drop-zone">
+                </ul>
+            </div>
+            <div class="forplus">
+                <h4 class="second">+</h4>
+            </div>
+        </div>
+
+        <div class="design done row col-4">
+            <h3>Done</h3>
+            <div>
+                <input type="text" class="form-control bordercls invisible" id="myInput2"
+                    placeholder="Write done list items" />
+            </div>
+            <div class="container mt-3 forcheckbox">
+                <div class="place"></div>
+                <ul class="list-group todo-list2 drop-zone"></ul>
+            </div>
+            <div class="forplus">
+                <h4 class="third">+</h4>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="btn myResBut container resbutton myRes">Restore</button>
+
+    <div id="context-menu" class="context">
+        <div class="item delete">Delete</div>
+        <div class="item archive">Archive</div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
